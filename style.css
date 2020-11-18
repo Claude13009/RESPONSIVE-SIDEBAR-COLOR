@@ -1,0 +1,164 @@
+/*__________________________________________________________________________________________________________________
+___________________________________________SELECTEURS DE TYPE ____________________________________________________*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border-box indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur. */
+}
+/* """""""""""""" */
+body
+{
+    min-height: 100vh;
+    background: #150019;
+}
+/* """""""""""""" */
+ul
+{
+    list-style: none;
+}
+
+/*_________________________________________SELECTEURS DE CLASSE ____________________________________________________
+___________________________________________SIDE BAR GAUCHE________________________________________________________*/
+
+.titre
+{
+    font-family: poppins, sans-serif;
+}
+/* """""""""""""" */
+.navigation
+{
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    /* ou height: 100vh;  et pas de position: fixed;   */
+    background: #3e0748;
+    transition: 0.5s;
+    overflow: hidden;
+    
+}
+/* """""""""""""" */
+.navigation:hover,
+.navigation.active
+{
+    width: 300px;    
+}
+/* """""""""""""" */
+.navigation ul
+{
+    position: relative;
+    top: 4em;
+    left: 0;
+    width: 100%;
+}
+/* """""""""""""" */
+.navigation ul li
+{
+    position: relative;
+    width: 100%;
+}
+/* """""""""""""" */
+.navigation ul li:hover
+{
+    background: #ea1d63;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+/* """""""""""""" */
+.navigation ul li a .icône
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center; 
+}
+/* """""""""""""" */
+.navigation ul li a .icône .fa
+{
+    font-size: 24px;
+}
+/* """""""""""""" */
+.navigation ul li a .titre
+{
+    position: relative;
+    display: block;
+    min-width: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+} 
+/* """""""""""""" */
+.coin
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #330748;
+    cursor: pointer;
+}
+/* """""""""""""" */
+.coin:hover
+{
+    background: #ea1d63 ;
+}
+
+.coin::before
+{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.coin:hover::before
+{
+    content: '\f00d';
+}
+
+
+.border
+{
+    border: 2px solid black;
+    background-color: yellowgreen;
+    opacity: 1;
+}
+
+
+.border2
+{
+    border: 2px solid green;
+    background-color: red;
+    opacity: 0.5;
+}
+
+
+.border3
+{
+    border: 2px solid yellow;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.border4
+{
+    border: 2px solid red;
+}

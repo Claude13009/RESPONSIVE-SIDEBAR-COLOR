@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- _____________________________________________________________________________________________________________
+______________________________________________________________________________________________________________ -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Défi Responsive Sidebar</title>
+    <!-- Lien vers Bootstrap CDN pour HTML -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Lien vers GOOGLE Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- Lien vers fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- _____________________________________________________________________________________________________________
+______________________________________________________________________________________________________________ -->
+
+<body>
+
+<!-- _____________________________________________________________________________________________________________
+_______________________________________SIDE BAR GAUCHE________________________________________________________ -->
+
+
+    <section class="navigation border4">
+
+                            <!-- (ul>li>a>(span*2))*7 -->       <!-- ^_^ -->
+
+    <!-- Onglet 1 -->
+
+        <ul class="border">
+            <li>
+                <a href="#">
+                    <span class="icône border3"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="titre border2">ACCUEIL</span>
+                </a>
+            </li>
+        </ul>
+
+    <!-- Onglet 2 -->
+
+        <ul class="border">
+            <li>
+                <a href="#">
+                    <span class="icône border3"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <span class="titre border2">PROFILS</span>
+                </a>
+            </li>
+        </ul>
+
+    <!-- Onglet 3 -->
+
+        <ul class="border">
+            <li>
+                <a href="#">
+                    <span class="icône border3"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                    <span class="titre border2">MESSAGES</span>
+                </a>
+            </li>
+        </ul>
+
+    <!-- Onglet 4 -->
+
+        <ul class="border">
+            <li>
+                <a href="#">
+                    <span class="icône border3"><i class="fa fa-question-circle" aria-hidden="true"></i></i></span>
+                    <span class="titre border2">AIDE</span>
+                </a>
+            </li>
+        </ul>
+
+    <!-- Onglet 5 -->
+
+        <ul class="border">
+            <li>
+                <a href="#">
+                    <span class="icône border3"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                    <span class="titre border2">REGLAGES</span>
+                </a>
+            </li>
+        </ul>
+
+    <!-- Onglet 6 -->
+
+        <ul class="border">
+            <li>
+                <a href="#">
+                    <span class="icône border3"><i class="fa fa-lock" aria-hidden="true"></i></i></span>
+                    <span class="titre border2">MOT DE PASSE</span>
+                </a>
+            </li>
+        </ul>
+
+    <!-- Onglet 7 -->
+
+        <ul class="border">
+            <li>
+                <a href="#">
+                    <span class="icône border3"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="titre border2">DECONNEXION</span>
+                </a>
+            </li>
+        </ul>
+       
+    </section>
+
+
+    <!-- Menu Burger1 -->
+    <div class="coin" onclick="coinMenu1()"></div>
+
+    <!-- Pour les bonnes pratiques j'ai créé un fichier JS  -->
+
+    <!-- Lien vers le JS -->    
+
+    <script src="main.js"></script>
+       
+</body>
+<!-- _____________________________________________________________________________________________________________
+______________________________________________________________________________________________________________ -->
+</html>
